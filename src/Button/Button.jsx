@@ -1,9 +1,9 @@
-import { forwardRef } from 'react';
-import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { darken, rgba } from 'polished';
-import { color, typography } from '../shared/styles';
+import PropTypes from 'prop-types';
+import { forwardRef } from 'react';
 import { easing } from '../shared/animation';
+import { color, typography } from '../shared/styles';
 
 const Text = styled.span`
   display: inline-block;
@@ -56,6 +56,8 @@ const StyledButton = styled.button`
     props.size === SIZES.SMALL ? typography.size.s1 : typography.size.s2}px;
   font-weight: ${typography.weight.extrabold};
   line-height: 1;
+  border: 10px solid red;
+  font-size: 20px;
 
   ${(props) =>
     !props.isLoading &&
