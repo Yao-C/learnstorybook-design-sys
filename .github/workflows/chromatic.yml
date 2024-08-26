@@ -23,13 +23,13 @@ jobs:
         run: npx playwright install --with-deps
       - name: Build Storybook
         run: yarn build-storybook --quiet
+
       - name: Serve Storybook
-        run: npx http-server storybook-static --port 6006 --silent &
-        # The & at the end runs the server in the background.
+        run: npx serve -s storybook-static -l 6006 &
 
       - name: Wait for Storybook to be Ready
-        run: npx wait-on tcp:6006
-        # Waits until the Storybook server is ready before continuing.
+        run: npx wait-on http://localhost:6006
+        # You can use the http check instead of the tcp check to see if it's faster.
 
       - name: Run Storybook Tests
         run: yarn test-storybook
