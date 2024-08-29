@@ -28,3 +28,6 @@ stats.html
 
 # Ignore Storybook build output
 storybook-static/
+
+dist
+.env

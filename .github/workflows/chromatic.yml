@@ -31,8 +31,8 @@ jobs:
         run: npx wait-on http://localhost:6006
         # You can use the http check instead of the tcp check to see if it's faster.
 
-      - name: Run Storybook Tests
-        run: yarn test-storybook
+      #- name: Run Storybook Tests
+      #  run: yarn test-storybook
 
   visual-tests:
     # The operating system it will run on

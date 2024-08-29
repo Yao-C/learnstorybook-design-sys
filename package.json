@@ -1,7 +1,7 @@
 {
-  "name": "learnstorybook-design-system-template",
+  "name": "@yao0517/learnstorybook-design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
@@ -19,7 +19,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "chromatic": "npx chromatic",
-    "test-storybook": "test-storybook"
+    "test-storybook": "test-storybook",
+    "build-storybook-docs": "storybook build  --docs"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",
@@ -81,5 +82,8 @@
   },
   "resolutions": {
     "jackspeak": "2.1.1"
-  }
+  },
+  "description": "Storybook design systems tutorial",
+  "repository": "https://github.com/Yao-C/learnstorybook-design-sys.git",
+  "author": "YAO CHENG <yao.cheng@norskluftambulanse.no>"
 }
