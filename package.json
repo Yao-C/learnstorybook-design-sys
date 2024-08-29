@@ -84,6 +84,9 @@
     "jackspeak": "2.1.1"
   },
   "description": "Storybook design systems tutorial",
-  "repository": "https://github.com/Yao-C/learnstorybook-design-sys.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yao-C/learnstorybook-design-sys.git"
+  },
   "author": "YAO CHENG <yao.cheng@norskluftambulanse.no>"
 }
